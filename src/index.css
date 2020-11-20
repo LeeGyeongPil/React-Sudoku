@@ -11,3 +11,88 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+ol, ul {
+  padding-left: 30px;
+}
+.board-row {
+  display: flex !important;
+}
+.board-row:after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+.status {
+  margin-bottom: 10px;
+}
+.square-box {
+	border:2px solid #eee;
+}
+.square {
+  background: #fff;
+  border: 1px solid #999;
+  float: left;
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 34px;
+  height: 34px;
+  margin-right: -1px;
+  margin-top: -1px;
+  padding: 0;
+  text-align: center;
+  width: 34px;
+}
+
+.square:focus {
+  outline: none;
+}
+
+.square.active {
+	background: #edf0ff;
+}
+
+.square.fixed {
+	background: #eee;
+}
+
+.square.error {
+	background: #ffb0b0;
+}
+
+.kbd-navigation .square:focus {
+  background: #ddd;
+}
+
+.game {
+  display: flex;
+  flex-direction: row;
+}
+
+.game-info {
+  margin-left: 20px;
+}
+.game-board {
+	display: inline-block;
+}
+.game-board-wrap {
+    text-align: center;
+    width: 350px;
+    margin-top: 20px;
+}
+.game-history {
+	position: absolute;
+    display: inline-block;
+    margin-left: 40px;
+    width: 120px;
+	height:300px;
+	overflow-y:auto;
+}
+.game-history li {
+	display: block;
+	position:relative;
+}
+.game-history li button {
+	padding: 5px 20px;
+}

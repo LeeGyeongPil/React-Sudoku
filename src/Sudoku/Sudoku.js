@@ -1,12 +1,17 @@
 import React, { Component } from 'react';
+import Board from './Board'
 
 class Sudoku extends Component {
 	render() {
 		return (
 			<div className="game">
-				<div className="game-board"></div>
+				<Board clearMethod={this.clear} />
 			</div>
 		);
+	}
+	
+	clear() {
+		alert('Clear');
 	}
 }
 
